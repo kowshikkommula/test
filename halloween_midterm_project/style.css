@@ -1,0 +1,383 @@
+/* ---------- Base Styles ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("C:/Users/91630/Pictures/bats.gif") repeat;
+    color: #222;
+    border-left: 10px solid #222;
+    border-right: 10px solid #222;
+    border-bottom: 10px solid #222;
+    border-top: 10px solid #222;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 5px;
+    padding: 0;  
+    font-style: bold;
+    margin: 0px 250px 150px 250px;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+/* ---------- Header ---------- */
+header {
+    background:linear-gradient(100deg,white,orange,black);
+    color: black;
+    padding: 10px;
+    
+    display: flex;
+    font-style: bold;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: flex-start; 
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.cat-text {
+    text-align: center;
+
+}
+
+.cat-link {
+    text-align: left;
+    font-weight: bold;
+    
+} 
+
+.cat-link :hover {
+    color: green;
+    font-weight: bold;
+
+}
+
+.big-word {
+    font-size: 50px;
+    /* or any size you prefer */
+}
+
+
+
+
+.title01 {
+    padding-left: 20px;
+}
+
+.title01 h1 {
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.title01 p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ---------- Navigation ---------- */
+.navbar-new {
+    background-color: black;
+    padding: 5px;
+}
+
+.navbar-new a:hover {
+    background-color: grey !important;
+}
+
+
+.navbar-new ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    margin: 0;
+    padding: 0;
+}
+.navbar-new ul li {
+    position: relative;
+}
+
+.navbar-new a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 30px;
+}
+
+.navbar-new a:hover {
+    background-color: orange;
+    color: black;
+}
+
+.navbar-new a.active {
+    color: orange;
+}
+ .navbar-new li ul {
+    display: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    list-style: none;
+    min-width: 170px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+
+}
+.navbar-new li ul li a {
+    display: block;
+}
+.navbar-new li:hover ul{
+    display: block;
+}
+.navbar-new li ul li a:hover{
+    background-color: gray;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    /* background-color: #f4f4f4; */
+    padding: 15px;
+    /* border-right: 2px solid black; */
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+    border: 2px solid;
+    padding: 5px;
+}
+
+.sidebar a:hover {
+    color: green;
+}
+
+/* ---------- Main Content ---------- */
+main {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+body { 
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+ 
+.content01 {
+    
+    flex: 1;
+    background-color: white;
+    padding: 0px;
+    color: black;
+}
+
+.content01 p {
+    line-height: 0.9;
+}
+
+.content01 h2,
+.content01 h3 {
+    color: black;
+    text-align: start;
+    font-weight: b;
+    font: bold;
+}
+
+.content00 {
+    
+    flex: 1;
+    background-color: white;
+    padding: 0px;
+    color: black;
+}
+
+.content00 p {
+    line-height: 0.9;
+}
+
+.content00 h2,
+.content00 h3 {
+    color: black;
+    text-align: start;
+    font-weight: b;
+    font: bold;
+}
+
+
+
+
+.content0 { 
+    
+    display: flex;
+    background-color: white;
+    padding: 0px;
+    color: black;
+}
+
+.content0 h3, p {
+    text-align:left;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+.content0 h2,
+.content0 h3 {
+    color: black;
+    text-align: start;
+    font-weight: bold;
+    font: bold;
+}
+
+
+
+/* ---------- Product Table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+    color: black;
+}
+
+td a {
+    color: black;
+
+}
+
+td a:hover {
+    color: orange;
+}
+
+.price-clr {
+    background-color: rgb(251, 220, 193);
+}
+
+/* ---------- Product Image ---------- */
+
+
+.cat-page-link{
+    font-weight: bold;
+
+}
+
+
+.image-text-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.cat-img {
+  max-width: 150%;   /* Ensures the image never exceeds its container */
+  height: auto;      /* Maintains the original aspect ratio */
+  display: block;    /* Removes extra space below image */
+  margin: 20px;
+  width: 150px;
+}
+
+
+/* .cat-description p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 500px;
+} */    
+
+.cat-paragraph{
+    color: black;
+    font-weight: bold;
+}
+
+.price-bold{
+    font-weight: bold;
+}
+
+
+/* side images cat page */
+
+  .side-images {
+    position: right;
+    right: white;
+    /* top: 100px; */
+    width: 100px;
+    background-color: #f5d6a0;
+    padding: 15px;
+    border-left: 2px solid #d1a869;
+    box-shadow: -2px 0 8px rgba(22, 23, 22, 0.1);
+  }
+
+  .side-images h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .sideimages-item {
+    text-align: center;
+    margin-bottom: 1px;
+  }
+
+  .sideimages-item img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 1px;
+  }
+
+  .sideimages-item a {
+    display: block;
+    color: #000;
+    text-decoration: underline;
+    margin-top: 1px;
+    font-weight: 500;
+  }
+
+  .sideimages-item a:hover{
+    color: green;
+  }
+  
+
+
+/* ---------- Footer ---------- */
+
+footer > * {
+    
+    background:linear-gradient(100deg, black, orange, white);
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 10px;
+        text-align: center; 
+}
