@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: white;
+    background: linear-gradient(270deg, #ff0202, #ff9b35);
+    flex-direction: row;
+    display: flex;
+}
+
+.header-block {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+.title-section {
+    display: flex;
+    padding: 17px 23px;
+    height: 6em;
+    gap: 23px;
+    align-items: center;
+    font-size:1.2em;
+}
+
+.title-section h1 {
+    font-size: 2em;
+    color: #322f2f;
+    margin-left: 1.6em;
+}
+
+.logo-container {
+    border-bottom: 0.15em solid black;
+    background-color: white;
+    justify-content: center;
+    width: 9.25em;
+    border-right: 0.15em solid black;
+    display: flex;
+}
+
+.logo-img {
+    height: auto;
+    width: 100px;
+}
+
+nav {
+    background-color: #020202;
+    flex: 1;
+}
+
+nav ul {
+    justify-content: space-evenly;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-size: 15px;
+    display: block;
+    padding: 13px 31px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: black;
+}
+
+nav ul li a.active {
+    color: #ff6802;
+}
+
+.page-wrapper {
+    background-image: url('../images/aum3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.container-main {
+    box-shadow: 0 0 23px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    background-color: white;
+    margin: 0 auto 4em;
+    border: 0.15rem solid black;
+}
+
+.content-area {
+    display: flex;
+    background-color: #dbdbdb;
+}
+
+#gpa-calc-section {
+    border-left: 1px solid #ff6802;
+    background: #dbdbdb;
+    padding: 27px 41px 38px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #b5b5b5;
+    width: 90%;
+    border-top: 2px solid #b5b5b5;
+    margin: 43px auto;
+    border-right: 1px solid #ff6802;
+}
+
+#gpa-calc-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+}
+
+.instruction-text {
+    color: black;
+    text-align: center;
+    font-size: 0.92em;
+    margin-bottom: 27px;
+}
+
+.header-row {
+    font-weight: bold;
+    display: flex;
+}
+
+.col-course {
+    width: 120px;
+}
+
+.col-credits {
+    text-align: center;
+    margin-left: 6em;
+    width: 140px;
+    font-size: 1.4em;
+}
+
+.col-grade {
+    margin-left: 1.5em;
+    width: 140px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.input-row {
+    margin: 2em 0;
+    display: flex;
+}
+
+.label-course {
+    color: black;
+    margin-right: 12px;
+    text-align: right;
+    width: 120px;
+}
+
+.field-input {
+    border: 1px solid #9b9b9b;
+    font-size: 12px;
+    height: 20px;
+    padding: 3px 5px;
+}
+
+.field-input:focus {
+    outline: 1px solid blue;
+}
+
+.field-credits {
+    margin-right: 7em;
+    margin-left: 12em;
+    width: 80px;
+}
+
+.field-grade {
+    width: 80px;
+}
+
+.result-display .result-output {
+    border-left: 2px solid black;
+    background: #b5b5b5;
+    margin-left: 12em;
+    border-top: 2px solid black;
+    width: 6.6em;
+}
+
+.button-controls {
+    margin-top: 27px;
+}
+
+#submitBtn,
+#resetBtn {
+    border: 1px solid #9b9b9b;
+    background: #e8e8e8;
+    font-size: 14px;
+    margin: 0 27px;
+}
+
+#submitBtn {
+    margin-left: 19em;
+}
+
+#resetBtn {
+    margin-left: 2.7em;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 33px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+footer {
+    border-top: 0.15em solid black;
+    background-color: #ff6802;
+    color: white;
+    padding: 17px 0;
+    margin-top: 0;
+}
+
+.footer-container {
+    justify-content: space-between;
+    max-width: 1200px;
+    display: flex;
+    padding: 0 33px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-middle {
+    flex: 1;
+}
+
+.footer-left p {
+    font-weight: 550;
+    font-size: 13px;
+    color: black;
+    margin: 2px 0;
+}
+
+.footer-middle {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-middle p {
+    font-weight: 550;
+    color: black;
+}
+
+.footer-right {
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+    gap: 13px;
+}
+
+.footer-right img {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+}

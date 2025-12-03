@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUM Computer Science - Home</title>
+    <link rel="stylesheet" href="../styles/Gpa.css">
+</head>
+
+<body class="page-wrapper">
+    <div class="container-main">
+        <header>
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="AUM Logo" class="logo-img">
+            </div>
+
+            <div class="header-block">
+                <div class="title-section" style="height:4.5em">
+                    <h1>Computer Science Department</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Description.html">Program Description</a></li>
+                        <li><a href="TA.html">TA&nbsp;&nbsp;Application</a></li>
+                        <li><a href="GPA.html" class="active">GPA Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content-area">
+
+            <section id="gpa-calc-section">
+                <h2>Find your GPA!</h2>
+                <p class="instruction-text">
+                    Enter the number of credit hours for each course, and the letter grade for each of them.
+                    At least 2 courses should be entered.
+                </p>
+
+                <div class="header-row">
+                    <span class="col-course"></span>
+                    <span class="col-credits">Credit Hours</span>
+                    <span class="col-grade">Grade</span>
+                </div>
+
+                <!-- Courses rows -->
+                <div class="input-row" style="margin-top:1em;">
+                    <span class="label-course">Course 1:</span>
+                    <input id="ch1" class="field-input field-credits" type="text">
+                    <input id="gr1" class="field-input field-grade" type="text" maxlength="2">
+                </div>
+
+                <div class="input-row">
+                    <span class="label-course">Course 2:</span>
+                    <input id="ch2" class="field-input field-credits" type="text">
+                    <input id="gr2" class="field-input field-grade" type="text" maxlength="2">
+                </div>
+
+                <div class="input-row">
+                    <span class="label-course">Course 3:</span>
+                    <input id="ch3" class="field-input field-credits" type="text">
+                    <input id="gr3" class="field-input field-grade" type="text" maxlength="2">
+                </div>
+
+                <div class="input-row">
+                    <span class="label-course">Course 4:</span>
+                    <input id="ch4" class="field-input field-credits" type="text">
+                    <input id="gr4" class="field-input field-grade" type="text" maxlength="2">
+                </div>
+
+                <div class="input-row">
+                    <span class="label-course">Course 5:</span>
+                    <input id="ch5" class="field-input field-credits" type="text">
+                    <input id="gr5" class="field-input field-grade" type="text" maxlength="2">
+                </div>
+
+                <!-- Average GPA -->
+                <div class="input-row result-display">
+                    <span class="label-course">Avg GPA:</span>
+                    <input id="avgGpa" class="field-input result-output" type="text" readonly>
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-controls">
+                    <button id="submitBtn" type="button" onclick="calculateGPA()">Submit</button>
+                    <button id="resetBtn" type="button" onclick="resetGPA()">Reset</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <p>7400 East Drive</p>
+                    <p>Montgomery, AL 36117</p>
+                    <p>Local: 334-244-3000</p>
+                    <p>Toll-Free: 800-227-2649</p>
+                </div>
+                <div class="footer-middle">
+                    <p>© 2025 Kowshik</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="../images/facebook-social-network-logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/GPA.js"></script>
+</body>
+
+</html>

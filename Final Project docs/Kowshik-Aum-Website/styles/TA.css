@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    flex-direction: row;
+    display: flex;
+    color: white;
+    background: linear-gradient(270deg, #ff0202, #ff9b35);
+}
+
+.header-block {
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+}
+
+.title-section {
+    height: 6em;
+    align-items: center;
+    gap: 23px;
+    padding: 17px 23px;
+    display: flex;
+    font-size:1.2em;
+}
+
+.title-section h1 {
+    color: #322f2f;
+    font-size: 2em;
+    margin-left: 1.6em;
+}
+
+.logo-container {
+    justify-content: center;
+    background-color: white;
+    border-bottom: 0.15em solid black;
+    display: flex;
+    border-right: 0.15em solid black;
+    width: 9.25em;
+}
+
+.logo-img {
+    height: auto;
+    width: 100px;
+}
+
+nav {
+    flex: 1;
+    background-color: #020202;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: 15px;
+    padding: 13px 31px;
+    display: block;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: black;
+}
+
+nav ul li a.active {
+    color: #ff6802;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/aum3.jpg');
+}
+
+.container-main {
+    margin: 0 auto 4em;
+    border: 0.15rem solid black;
+    max-width: 1000px;
+    box-shadow: 0 0 23px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.content-area {
+    display: flex;
+    background-color: #dbdbdb;
+}
+
+.form-section {
+    border: 1px solid #cecece;
+    min-height: 180px;
+    background-color: #dbdbdb;
+    justify-content: center;
+    padding: 27px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin: 33px auto;
+    max-width: 600px;
+}
+
+.form-wrapper {
+    border-left: 1px solid #ff6802;
+    border-right: 1px solid #ff6802;
+    border-top:2px solid #b5b5b5;
+    border-bottom:2px solid #b5b5b5;
+    width: 600px;
+    padding: 2rem;
+}
+
+.field-group {
+    margin-bottom: 23px;
+    display: flex;
+}
+
+.field-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.field-group input[type="text"],
+.field-group textarea {
+    font-size: 14px;
+    padding: 0.5em;
+    border-radius: 4px;
+    height: 1.2rem;
+    border: 1px solid #dfdfdf;
+    margin-left: 2rem;
+}
+
+.field-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.field-group input[type="checkbox"] {
+    margin-right: 7px;
+}
+
+.checkbox-group {
+    margin-left: 3.7em;
+    gap: 23px;
+    display: flex;
+}
+
+input:focus {
+    outline: 1px solid blue;
+}
+
+button {
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    padding: 12px 33px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    color: black;
+    background-color: white;
+}
+
+.button-group {
+    margin-top: 33px;
+    gap: 9rem;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    color: white;
+    padding: 17px 0;
+    background-color: #ff6802;
+    border-top: 0.15em solid black;
+    margin-top: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    display: flex;
+    padding: 0 33px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-middle {
+    flex: 1;
+}
+
+.footer-left p {
+    color: black;
+    font-size: 13px;
+    font-weight: 550;
+    margin: 2px 0;
+}
+
+.footer-middle {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-middle p {
+    color: black;
+    font-weight: 550;
+}
+
+.footer-right {
+    justify-content: flex-end;
+    gap: 13px;
+    display: flex;
+    flex: 1;
+}
+
+.footer-right img {
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
